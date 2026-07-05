@@ -8,6 +8,9 @@ async function app() {
 
   console.log("data queue Loading...");
 
+
+
+  
   console.log("========== PIT STOP QUEUE ==========");
   await writeDBToJson();
   const race = await manager();
