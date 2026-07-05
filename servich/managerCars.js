@@ -23,6 +23,18 @@ async function manager() {
       nextCarDetails: () => {
         return cars.find((car) => car.status === "waiting");
       },
+      getCarByNumber: (num) => {
+        const car = cars.find((car) => car.carNumber === num);
+        if (car) {
+          console.log(
+            `faund car: ${car.carNumber} Driver:  ${car.driverName} sttus${car.status}`,
+          );
+        }else{
+          console.log(`Error: No car found with number: ${num} in the current race`);
+          
+
+        }
+      },
     };
     return managerCars;
   } catch (e) {

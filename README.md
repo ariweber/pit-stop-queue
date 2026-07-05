@@ -4,22 +4,17 @@
 This is a project for tracking the status of race cars; it monitors their condition regarding routine maintenance and their position in the queue.
 
 
-### Installation
-1. Clone the repository.
-2. npm run start
-
-
-
 ### File structure
 
 ```
 pit-stop-queue/
 ├
-│-- index.js
-|--storge.js
+|--data/
+|   |--cars.json
 |-- servich/
-│    |-- servich.js
-|    |-- utils.js
+|    |-- manageCars
+|--index.js
+|--storge.js
 |-- README.md
 ```
 
@@ -35,7 +30,9 @@ The app allows the race engineer to see the following at a glance:
 • The ability to send a simulated radio message (text output) to the next vehicle.
 • System behavior when searching for a vehicle number not present in the race (ensuring the program does not crash).
 
-
+### How do you run it?
+1. Clone the repository.
+2. npm run start
 
 
 

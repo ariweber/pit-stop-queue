@@ -1,12 +1,11 @@
 const fs = require("fs/promises");
 
 const CARS_FILE = "data/cars.json";
+const URL = "https://server-for-test-week-13.onrender.com/api/race";
 
 async function writeDBToJson() {
   try {
-    const respons = await fetch(
-      "https://server-for-test-week-13.onrender.com/api/race",
-    );
+    const respons = await fetch(URL);
     const db = await respons.json();
     await fs.writeFile(CARS_FILE, JSON.stringify(db, null, 2), "utf-8");
   } catch (err) {
@@ -20,8 +19,8 @@ async function readCarsFromJson() {
     return JSON.parse(data || []);
   } catch (e) {
     console.log(e);
-    return []
+    return [];
   }
 }
 
-module.exports = { writeDBToJson, readCarsFromJson };
+module.exports = { writeDBToJson, readCarsFromJson};
