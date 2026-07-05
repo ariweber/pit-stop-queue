@@ -12,6 +12,7 @@
     "url": "git+https://github.com/ariweber/pit-stop-queue.git"
   },
   "keywords": [],
+  "type": "commonjs",
   "author": "",
   "license": "ISC",
   "bugs": {
