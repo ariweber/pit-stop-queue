@@ -1,0 +1,21 @@
+{
+  "name": "pit-stop-queue",
+  "version": "1.0.0",
+  "description": "This is a project for tracking the status of race cars; it monitors their condition regarding routine maintenance and their position in the queue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariweber/pit-stop-queue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariweber/pit-stop-queue/issues"
+  },
+  "homepage": "https://github.com/ariweber/pit-stop-queue#readme"
+}
